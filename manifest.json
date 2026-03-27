@@ -1,20 +1,20 @@
 {
-  "name": "JayNails",
-  "short_name": "JayNails",
+  "name": "Aylin Nails",
+  "short_name": "Aylin",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/jaynails/",
-  "scope": "/jaynails/",
+  "start_url": "/aylinnails/",
+  "scope": "/aylinnails/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/jaynails/icons/icon-192x192.png",
+      "src": "/aylinnails/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/jaynails/icons/icon-512x512.png",
+      "src": "/aylinnails/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

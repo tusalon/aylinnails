@@ -1,22 +1,22 @@
-// sw.js - Service Worker para JayNails
+// sw.js - Service Worker para Aylin Nails
 
-const CACHE_NAME = 'jaynails-v1';
+const CACHE_NAME = 'aylinnails-v1';
 const urlsToCache = [
-  '/jaynails/',
-  '/jaynails/index.html',
-  '/jaynails/admin.html',
-  '/jaynails/admin-login.html',
-  '/jaynails/setup-wizard.html',
-  '/jaynails/editar-negocio.html',
-  '/jaynails/manifest.json',
-  '/jaynails/icons/icon-72x72.png',
-  '/jaynails/icons/icon-96x96.png',
-  '/jaynails/icons/icon-128x128.png',
-  '/jaynails/icons/icon-144x144.png',
-  '/jaynails/icons/icon-152x152.png',
-  '/jaynails/icons/icon-192x192.png',
-  '/jaynails/icons/icon-384x384.png',
-  '/jaynails/icons/icon-512x512.png'
+  '/aylinnails/',
+  '/aylinnails/index.html',
+  '/aylinnails/admin.html',
+  '/aylinnails/admin-login.html',
+  '/aylinnails/setup-wizard.html',
+  '/aylinnails/editar-negocio.html',
+  '/aylinnails/manifest.json',
+  '/aylinnails/icons/icon-72x72.png',
+  '/aylinnails/icons/icon-96x96.png',
+  '/aylinnails/icons/icon-128x128.png',
+  '/aylinnails/icons/icon-144x144.png',
+  '/aylinnails/icons/icon-152x152.png',
+  '/aylinnails/icons/icon-192x192.png',
+  '/aylinnails/icons/icon-384x384.png',
+  '/aylinnails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/jaynails/icons/icon-192x192.png');
+            return caches.match('/aylinnails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para JayNails');
+console.log('✅ Service Worker configurado para Aylin Nails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
